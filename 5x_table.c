@@ -2,10 +2,10 @@
 
 int main (void)
 {
-        int even_number[6];
-        int count;
+        int even_number[6] = {0};
+        int count = 0;
 
-    for(int i = 0; i <= 10; i++)
+    for(int i = 1; i <= 10; i++)
     {
         int result = i * 5;
 
@@ -13,7 +13,11 @@ int main (void)
         {
             even_number[count] = result;
             count++;
-            printf("%i\n %i\n %i\n %i\n %i\n %i\n", even_number[0], even_number[1], even_number[2], even_number[3], even_number[4], even_number[5]);
         }
     }
+    for(int i = 0; i < count; i++)
+    {  
+        printf("%i\n", even_number[i]);
+    }
+    return 0;
 }
