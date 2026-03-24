@@ -1,1 +1,3 @@
 # My-c-journey
+
+learning on termux... 
