@@ -1,20 +1,19 @@
 #include <stdio.h>
 
-int main ()
+int main (void)
 {
-    int multiple = 1;
+        int even_number[6];
+        int count;
 
-    for(int i = 1; i <= 10; i++)
+    for(int i = 0; i <= 10; i++)
     {
-        multiple = i * 5;
+        int result = i * 5;
 
-        if(multiple % 2 == 0)
+        if(result % 2 == 0)
         {
-            printf("Even numbers: %i\n", multiple);
+            even_number[count] = result;
+            count++;
+            printf("%i\n %i\n %i\n %i\n %i\n %i\n", even_number[0], even_number[1], even_number[2], even_number[3], even_number[4], even_number[5]);
         }
-             if(multiple % 2 != 0)
-             {
-                 printf("Odd numbers: %i\n", multiple);
-             }
     }
 }
