@@ -23,7 +23,7 @@ int main(void)
     }
 
     //display the output
-    printf("Aveage = %f\n", average);
+    printf("Average = %f\n", average);
     printf("total = %i\n", total);
     printf("least number = %i\n", mim);
 }
